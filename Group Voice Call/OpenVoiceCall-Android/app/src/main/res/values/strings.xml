@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string name="app_name">Open Voice Call</string>
+
+    <string name="msg_welcome_message">Welcome to Open Voice Call!</string>
+
+    <string name="label_channel_name_hint">Channel name</string>
+
+    <string name="label_join">Join</string>
+
+    <string name="msg_no_network_connection">No network connection, please check the network settings</string>
+
+    // DO NOT TRANSLATE
+    <string name="bit_rate_value_with_unit">%d kbps</string>
+</resources>

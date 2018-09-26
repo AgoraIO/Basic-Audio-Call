@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385F305E2122D295005D5301 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F305D2122D295005D5301 /* Accelerate.framework */; };
+		70F970C4209039CD0075E402 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F970C3209039CD0075E402 /* SystemConfiguration.framework */; };
+		A71D86F51F6F93E4004B8FA7 /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D86F41F6F93E4004B8FA7 /* InfoCell.m */; };
+		A71D86F81F6F993C004B8FA7 /* InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D86F71F6F993C004B8FA7 /* InfoModel.m */; };
+		A767A0D02074EF050070BAFF /* ChatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A767A0CE2074EF050070BAFF /* ChatButton.m */; };
+		A767A0D32074EF0F0070BAFF /* ChannelNameCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = A767A0D22074EF0F0070BAFF /* ChannelNameCheck.m */; };
+		A767A0D62074EF1B0070BAFF /* AppID.m in Sources */ = {isa = PBXBuildFile; fileRef = A767A0D52074EF1B0070BAFF /* AppID.m */; };
+		A79E0DE11F6D462C00FE5711 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E0DE01F6D462C00FE5711 /* main.m */; };
+		A79E0DE41F6D462C00FE5711 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E0DE31F6D462C00FE5711 /* AppDelegate.m */; };
+		A79E0DEA1F6D462C00FE5711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79E0DE81F6D462C00FE5711 /* Main.storyboard */; };
+		A79E0DEC1F6D462C00FE5711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79E0DEB1F6D462C00FE5711 /* Assets.xcassets */; };
+		A79E0DEF1F6D462C00FE5711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79E0DED1F6D462C00FE5711 /* LaunchScreen.storyboard */; };
+		A79E0E141F6D46BC00FE5711 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E131F6D46BC00FE5711 /* CoreMedia.framework */; };
+		A79E0E161F6D46D100FE5711 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E151F6D46D100FE5711 /* libresolv.tbd */; };
+		A79E0E181F6D46DE00FE5711 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E171F6D46DE00FE5711 /* CoreTelephony.framework */; };
+		A79E0E1A1F6D46EF00FE5711 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E191F6D46EF00FE5711 /* AudioToolbox.framework */; };
+		A79E0E1C1F6D46FB00FE5711 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E1B1F6D46FB00FE5711 /* AVFoundation.framework */; };
+		A79E0E1E1F6D470700FE5711 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E1D1F6D470700FE5711 /* libc++.tbd */; };
+		A79E0E201F6D471800FE5711 /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E0E1F1F6D471800FE5711 /* AgoraAudioKit.framework */; };
+		A79E0E2B1F6D490300FE5711 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E0E2A1F6D490300FE5711 /* MainViewController.m */; };
+		A79E0E7B1F6F6FDD00FE5711 /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E0E7A1F6F6FDD00FE5711 /* RoomViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		385F305D2122D295005D5301 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		70F970C3209039CD0075E402 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A71D86F31F6F93E4004B8FA7 /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
+		A71D86F41F6F93E4004B8FA7 /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
+		A71D86F61F6F993C004B8FA7 /* InfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoModel.h; sourceTree = "<group>"; };
+		A71D86F71F6F993C004B8FA7 /* InfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoModel.m; sourceTree = "<group>"; };
+		A767A0CE2074EF050070BAFF /* ChatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatButton.m; sourceTree = "<group>"; };
+		A767A0CF2074EF050070BAFF /* ChatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatButton.h; sourceTree = "<group>"; };
+		A767A0D12074EF0F0070BAFF /* ChannelNameCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelNameCheck.h; sourceTree = "<group>"; };
+		A767A0D22074EF0F0070BAFF /* ChannelNameCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelNameCheck.m; sourceTree = "<group>"; };
+		A767A0D42074EF1B0070BAFF /* AppID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppID.h; sourceTree = "<group>"; };
+		A767A0D52074EF1B0070BAFF /* AppID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppID.m; sourceTree = "<group>"; };
+		A79E0DDC1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenVoiceCall-iOS-Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79E0DE01F6D462C00FE5711 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A79E0DE21F6D462C00FE5711 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A79E0DE31F6D462C00FE5711 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A79E0DE91F6D462C00FE5711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79E0DEB1F6D462C00FE5711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79E0DEE1F6D462C00FE5711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79E0DF01F6D462C00FE5711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79E0E131F6D46BC00FE5711 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A79E0E151F6D46D100FE5711 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A79E0E171F6D46DE00FE5711 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A79E0E191F6D46EF00FE5711 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A79E0E1B1F6D46FB00FE5711 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A79E0E1D1F6D470700FE5711 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A79E0E1F1F6D471800FE5711 /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = "OpenVoiceCall-OC/libs/AgoraAudioKit.framework"; sourceTree = "<group>"; };
+		A79E0E291F6D490300FE5711 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A79E0E2A1F6D490300FE5711 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A79E0E341F6D4ADE00FE5711 /* OpenVoiceCall.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenVoiceCall.pch; sourceTree = "<group>"; };
+		A79E0E351F6D4CD900FE5711 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		A79E0E791F6F6FDD00FE5711 /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		A79E0E7A1F6F6FDD00FE5711 /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79E0DD91F6D462C00FE5711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385F305E2122D295005D5301 /* Accelerate.framework in Frameworks */,
+				70F970C4209039CD0075E402 /* SystemConfiguration.framework in Frameworks */,
+				A79E0E201F6D471800FE5711 /* AgoraAudioKit.framework in Frameworks */,
+				A79E0E1E1F6D470700FE5711 /* libc++.tbd in Frameworks */,
+				A79E0E1C1F6D46FB00FE5711 /* AVFoundation.framework in Frameworks */,
+				A79E0E1A1F6D46EF00FE5711 /* AudioToolbox.framework in Frameworks */,
+				A79E0E181F6D46DE00FE5711 /* CoreTelephony.framework in Frameworks */,
+				A79E0E161F6D46D100FE5711 /* libresolv.tbd in Frameworks */,
+				A79E0E141F6D46BC00FE5711 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7237F5C2126AA9E00F2F397 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A79E0E291F6D490300FE5711 /* MainViewController.h */,
+				A79E0E2A1F6D490300FE5711 /* MainViewController.m */,
+				A79E0E791F6F6FDD00FE5711 /* RoomViewController.h */,
+				A79E0E7A1F6F6FDD00FE5711 /* RoomViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A79E0DD31F6D462C00FE5711 = {
+			isa = PBXGroup;
+			children = (
+				A79E0DDE1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C */,
+				A79E0DDD1F6D462C00FE5711 /* Products */,
+				A79E0E121F6D46BC00FE5711 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A79E0DDD1F6D462C00FE5711 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79E0DDC1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79E0DDE1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				A7237F5C2126AA9E00F2F397 /* Controllers */,
+				A79E0E241F6D480100FE5711 /* Views */,
+				A79E0E251F6D486B00FE5711 /* Models */,
+				A79E0DDF1F6D462C00FE5711 /* Supporting Files */,
+			);
+			path = "OpenVoiceCall-iOS-Objective-C";
+			sourceTree = "<group>";
+		};
+		A79E0DDF1F6D462C00FE5711 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A79E0DEB1F6D462C00FE5711 /* Assets.xcassets */,
+				A79E0DED1F6D462C00FE5711 /* LaunchScreen.storyboard */,
+				A79E0DF01F6D462C00FE5711 /* Info.plist */,
+				A79E0DE01F6D462C00FE5711 /* main.m */,
+				A79E0DE21F6D462C00FE5711 /* AppDelegate.h */,
+				A79E0DE31F6D462C00FE5711 /* AppDelegate.m */,
+				A79E0E341F6D4ADE00FE5711 /* OpenVoiceCall.pch */,
+				A79E0E351F6D4CD900FE5711 /* Define.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A79E0E121F6D46BC00FE5711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385F305D2122D295005D5301 /* Accelerate.framework */,
+				70F970C3209039CD0075E402 /* SystemConfiguration.framework */,
+				A79E0E1F1F6D471800FE5711 /* AgoraAudioKit.framework */,
+				A79E0E1D1F6D470700FE5711 /* libc++.tbd */,
+				A79E0E1B1F6D46FB00FE5711 /* AVFoundation.framework */,
+				A79E0E191F6D46EF00FE5711 /* AudioToolbox.framework */,
+				A79E0E171F6D46DE00FE5711 /* CoreTelephony.framework */,
+				A79E0E151F6D46D100FE5711 /* libresolv.tbd */,
+				A79E0E131F6D46BC00FE5711 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A79E0E241F6D480100FE5711 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A79E0DE81F6D462C00FE5711 /* Main.storyboard */,
+				A767A0CF2074EF050070BAFF /* ChatButton.h */,
+				A767A0CE2074EF050070BAFF /* ChatButton.m */,
+				A71D86F31F6F93E4004B8FA7 /* InfoCell.h */,
+				A71D86F41F6F93E4004B8FA7 /* InfoCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A79E0E251F6D486B00FE5711 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A767A0D42074EF1B0070BAFF /* AppID.h */,
+				A767A0D52074EF1B0070BAFF /* AppID.m */,
+				A71D86F61F6F993C004B8FA7 /* InfoModel.h */,
+				A71D86F71F6F993C004B8FA7 /* InfoModel.m */,
+				A767A0D12074EF0F0070BAFF /* ChannelNameCheck.h */,
+				A767A0D22074EF0F0070BAFF /* ChannelNameCheck.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79E0DDB1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79E0E091F6D462D00FE5711 /* Build configuration list for PBXNativeTarget "OpenVoiceCall-iOS-Objective-C" */;
+			buildPhases = (
+				A79E0DD81F6D462C00FE5711 /* Sources */,
+				A79E0DD91F6D462C00FE5711 /* Frameworks */,
+				A79E0DDA1F6D462C00FE5711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenVoiceCall-iOS-Objective-C";
+			productName = "OpenVoiceCall-OC";
+			productReference = A79E0DDC1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79E0DD41F6D462C00FE5711 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SRX;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = CavanSu;
+				TargetAttributes = {
+					A79E0DDB1F6D462C00FE5711 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A79E0DD71F6D462C00FE5711 /* Build configuration list for PBXProject "OpenVoiceCall-iOS-Objective-C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79E0DD31F6D462C00FE5711;
+			productRefGroup = A79E0DDD1F6D462C00FE5711 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79E0DDB1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79E0DDA1F6D462C00FE5711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79E0DEF1F6D462C00FE5711 /* LaunchScreen.storyboard in Resources */,
+				A79E0DEC1F6D462C00FE5711 /* Assets.xcassets in Resources */,
+				A79E0DEA1F6D462C00FE5711 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79E0DD81F6D462C00FE5711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79E0E2B1F6D490300FE5711 /* MainViewController.m in Sources */,
+				A767A0D02074EF050070BAFF /* ChatButton.m in Sources */,
+				A767A0D62074EF1B0070BAFF /* AppID.m in Sources */,
+				A79E0DE41F6D462C00FE5711 /* AppDelegate.m in Sources */,
+				A71D86F81F6F993C004B8FA7 /* InfoModel.m in Sources */,
+				A79E0DE11F6D462C00FE5711 /* main.m in Sources */,
+				A79E0E7B1F6F6FDD00FE5711 /* RoomViewController.m in Sources */,
+				A767A0D32074EF0F0070BAFF /* ChannelNameCheck.m in Sources */,
+				A71D86F51F6F93E4004B8FA7 /* InfoCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79E0DE81F6D462C00FE5711 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79E0DE91F6D462C00FE5711 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79E0DED1F6D462C00FE5711 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79E0DEE1F6D462C00FE5711 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79E0E071F6D462D00FE5711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79E0E081F6D462D00FE5711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79E0E0A1F6D462D00FE5711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OpenVoiceCall-iOS-Objective-C/",
+				);
+				GCC_PREFIX_HEADER = "$SRCROOT/OpenVoiceCall-iOS-Objective-C/OpenVoiceCall.pch";
+				INFOPLIST_FILE = "OpenVoiceCall-iOS-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.OpenVoiceCall-iOS-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79E0E0B1F6D462D00FE5711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OpenVoiceCall-iOS-Objective-C/",
+				);
+				GCC_PREFIX_HEADER = "$SRCROOT/OpenVoiceCall-iOS-Objective-C/OpenVoiceCall.pch";
+				INFOPLIST_FILE = "OpenVoiceCall-iOS-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.OpenVoiceCall-iOS-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79E0DD71F6D462C00FE5711 /* Build configuration list for PBXProject "OpenVoiceCall-iOS-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79E0E071F6D462D00FE5711 /* Debug */,
+				A79E0E081F6D462D00FE5711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79E0E091F6D462D00FE5711 /* Build configuration list for PBXNativeTarget "OpenVoiceCall-iOS-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79E0E0A1F6D462D00FE5711 /* Debug */,
+				A79E0E0B1F6D462D00FE5711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79E0DD41F6D462C00FE5711 /* Project object */;
+}

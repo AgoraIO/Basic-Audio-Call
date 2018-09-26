@@ -1,0 +1,14 @@
+//
+//  OpenVoiceCall.pch
+//  OpenVoiceCall-OC
+//
+//  Created by CavanSu on 2017/9/16.
+//  Copyright © 2017 Agora. All rights reserved.
+//
+
+#ifndef OpenVoiceCall_pch
+#define OpenVoiceCall_pch
+
+#import "Define.h"
+
+#endif /* OpenVoiceCall_pch */
