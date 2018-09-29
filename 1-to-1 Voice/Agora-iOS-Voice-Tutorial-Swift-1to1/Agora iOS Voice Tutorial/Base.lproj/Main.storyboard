@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Chat View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoiceChatViewController" customModule="Agora_iOS_Voice_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayw-cH-fPV">
+                                <rect key="frame" x="0.0" y="579" width="375" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-fy-s2L" userLabel="mute_Button">
+                                        <rect key="frame" x="83" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="eqw-DP-TQc"/>
+                                            <constraint firstAttribute="height" constant="64" id="wHV-FP-PHc"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_mute"/>
+                                        <state key="selected" image="btn_mute_blue"/>
+                                        <state key="highlighted" image="btn_mute_blue"/>
+                                        <connections>
+                                            <action selector="didClickMuteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fie-ht-Hqg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcJ-58-sJE" userLabel="endcall_Button">
+                                        <rect key="frame" x="155" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="0of-qI-Aa3"/>
+                                            <constraint firstAttribute="height" constant="64" id="CTT-0J-Ia9"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_endcall"/>
+                                        <connections>
+                                            <action selector="didClickHangUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vr-F5-RDn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T7-rf-fNV" userLabel="speaker_Button">
+                                        <rect key="frame" x="227" y="12" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="35l-Zx-90U"/>
+                                            <constraint firstAttribute="height" constant="64" id="WgT-aK-BMA"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_speaker"/>
+                                        <state key="selected" image="btn_speaker_blue"/>
+                                        <connections>
+                                            <action selector="didClickSwitchSpeakerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMk-kd-51F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2T7-rf-fNV" firstAttribute="centerY" secondItem="WcJ-58-sJE" secondAttribute="centerY" id="0Rc-PO-67w"/>
+                                    <constraint firstItem="WcJ-58-sJE" firstAttribute="leading" secondItem="IFD-fy-s2L" secondAttribute="trailing" constant="8" id="Fho-TA-KeY"/>
+                                    <constraint firstItem="WcJ-58-sJE" firstAttribute="centerX" secondItem="Ayw-cH-fPV" secondAttribute="centerX" id="R1Q-gs-aMv"/>
+                                    <constraint firstItem="2T7-rf-fNV" firstAttribute="leading" secondItem="WcJ-58-sJE" secondAttribute="trailing" constant="8" id="djF-y4-zdS"/>
+                                    <constraint firstItem="WcJ-58-sJE" firstAttribute="centerY" secondItem="Ayw-cH-fPV" secondAttribute="centerY" id="kDd-FM-79V"/>
+                                    <constraint firstAttribute="height" constant="88" id="ldH-QK-9x3"/>
+                                    <constraint firstItem="IFD-fy-s2L" firstAttribute="centerY" secondItem="WcJ-58-sJE" secondAttribute="centerY" id="nbz-WS-GW8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ayw-cH-fPV" secondAttribute="bottom" id="KFE-Vo-ARW"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayw-cH-fPV" secondAttribute="trailing" id="TEk-TR-3EH"/>
+                            <constraint firstItem="Ayw-cH-fPV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rRg-Pu-avB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlButtonsView" destination="Ayw-cH-fPV" id="THl-Ld-v7w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_endcall" width="40" height="40"/>
+        <image name="btn_mute" width="40" height="40"/>
+        <image name="btn_mute_blue" width="40" height="40"/>
+        <image name="btn_speaker" width="40" height="40"/>
+        <image name="btn_speaker_blue" width="40" height="40"/>
+    </resources>
+</document>

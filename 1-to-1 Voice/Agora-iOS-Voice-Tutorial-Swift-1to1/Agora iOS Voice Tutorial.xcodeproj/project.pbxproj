@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077537BA1ED5416D00EF0878 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077537B91ED5416D00EF0878 /* CoreMedia.framework */; };
+		07DD2D2D1E9B2FC600E9FEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */; };
+		07DD2D2F1E9B2FC600E9FEED /* VoiceChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */; };
+		07DD2D321E9B2FC600E9FEED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D301E9B2FC600E9FEED /* Main.storyboard */; };
+		07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D331E9B2FC600E9FEED /* Assets.xcassets */; };
+		07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */; };
+		07DD2D401E9B300200E9FEED /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D3F1E9B300200E9FEED /* AppID.swift */; };
+		07DD2D481E9B466A00E9FEED /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D471E9B466A00E9FEED /* AgoraAudioKit.framework */; };
+		07DD2D4B1E9B479800E9FEED /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */; };
+		07DD2D4D1E9B479D00E9FEED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */; };
+		07DD2D4F1E9B47A400E9FEED /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */; };
+		07DD2D511E9B47B000E9FEED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */; };
+		07DD2D531E9B47BF00E9FEED /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D521E9B47BF00E9FEED /* libc++.tbd */; };
+		0F2747CF1FB45B2D005D3DBA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */; };
+		57FE09C8EF6A72848B02BE6B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		077537B91ED5416D00EF0878 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora iOS Voice Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatViewController.swift; sourceTree = "<group>"; };
+		07DD2D311E9B2FC600E9FEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07DD2D331E9B2FC600E9FEED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07DD2D361E9B2FC600E9FEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07DD2D381E9B2FC600E9FEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DD2D3F1E9B300200E9FEED /* AppID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppID.swift; sourceTree = "<group>"; };
+		07DD2D471E9B466A00E9FEED /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = libs/AgoraAudioKit.framework; sourceTree = SOURCE_ROOT; };
+		07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		07DD2D521E9B47BF00E9FEED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07DD2D261E9B2FC600E9FEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2747CF1FB45B2D005D3DBA /* SystemConfiguration.framework in Frameworks */,
+				077537BA1ED5416D00EF0878 /* CoreMedia.framework in Frameworks */,
+				07DD2D531E9B47BF00E9FEED /* libc++.tbd in Frameworks */,
+				07DD2D511E9B47B000E9FEED /* CoreTelephony.framework in Frameworks */,
+				07DD2D4F1E9B47A400E9FEED /* libresolv.tbd in Frameworks */,
+				07DD2D4D1E9B479D00E9FEED /* AVFoundation.framework in Frameworks */,
+				07DD2D4B1E9B479800E9FEED /* AudioToolbox.framework in Frameworks */,
+				07DD2D481E9B466A00E9FEED /* AgoraAudioKit.framework in Frameworks */,
+				57FE09C8EF6A72848B02BE6B /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DD2D201E9B2FC600E9FEED = {
+			isa = PBXGroup;
+			children = (
+				07DD2D2B1E9B2FC600E9FEED /* Agora iOS Voice Tutorial */,
+				07DD2D2A1E9B2FC600E9FEED /* Products */,
+				07DD2D491E9B479800E9FEED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07DD2D2A1E9B2FC600E9FEED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07DD2D2B1E9B2FC600E9FEED /* Agora iOS Voice Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				07DD2D3E1E9B2FD400E9FEED /* Voice Chat */,
+				07DD2D471E9B466A00E9FEED /* AgoraAudioKit.framework */,
+				07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */,
+				07DD2D301E9B2FC600E9FEED /* Main.storyboard */,
+				07DD2D331E9B2FC600E9FEED /* Assets.xcassets */,
+				07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */,
+				07DD2D381E9B2FC600E9FEED /* Info.plist */,
+			);
+			path = "Agora iOS Voice Tutorial";
+			sourceTree = "<group>";
+		};
+		07DD2D3E1E9B2FD400E9FEED /* Voice Chat */ = {
+			isa = PBXGroup;
+			children = (
+				07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */,
+				07DD2D3F1E9B300200E9FEED /* AppID.swift */,
+			);
+			name = "Voice Chat";
+			sourceTree = "<group>";
+		};
+		07DD2D491E9B479800E9FEED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */,
+				077537B91ED5416D00EF0878 /* CoreMedia.framework */,
+				07DD2D521E9B47BF00E9FEED /* libc++.tbd */,
+				07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */,
+				07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */,
+				07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */,
+				07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */,
+				4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07DD2D281E9B2FC600E9FEED /* Agora iOS Voice Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora iOS Voice Tutorial" */;
+			buildPhases = (
+				07DD2D251E9B2FC600E9FEED /* Sources */,
+				07DD2D261E9B2FC600E9FEED /* Frameworks */,
+				07DD2D271E9B2FC600E9FEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agora iOS Voice Tutorial";
+			productName = "Agora iOS Voice Tutorial";
+			productReference = 07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07DD2D211E9B2FC600E9FEED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Agora;
+				TargetAttributes = {
+					07DD2D281E9B2FC600E9FEED = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 48TB6ZZL5S;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora iOS Voice Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07DD2D201E9B2FC600E9FEED;
+			productRefGroup = 07DD2D2A1E9B2FC600E9FEED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07DD2D281E9B2FC600E9FEED /* Agora iOS Voice Tutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07DD2D271E9B2FC600E9FEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */,
+				07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */,
+				07DD2D321E9B2FC600E9FEED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07DD2D251E9B2FC600E9FEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DD2D401E9B300200E9FEED /* AppID.swift in Sources */,
+				07DD2D2F1E9B2FC600E9FEED /* VoiceChatViewController.swift in Sources */,
+				07DD2D2D1E9B2FC600E9FEED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07DD2D301E9B2FC600E9FEED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DD2D311E9B2FC600E9FEED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DD2D361E9B2FC600E9FEED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07DD2D391E9B2FC600E9FEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07DD2D3A1E9B2FC600E9FEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07DD2D3C1E9B2FC600E9FEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (TH5SJ72C94)";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = "Agora iOS Voice Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-iOS-Voice-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a209dd7d-e48c-41f5-9303-d0ae3d58ac4f";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07DD2D3D1E9B2FC600E9FEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (TH5SJ72C94)";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = "Agora iOS Voice Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-iOS-Voice-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a209dd7d-e48c-41f5-9303-d0ae3d58ac4f";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora iOS Voice Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DD2D391E9B2FC600E9FEED /* Debug */,
+				07DD2D3A1E9B2FC600E9FEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora iOS Voice Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DD2D3C1E9B2FC600E9FEED /* Debug */,
+				07DD2D3D1E9B2FC600E9FEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07DD2D211E9B2FC600E9FEED /* Project object */;
+}
