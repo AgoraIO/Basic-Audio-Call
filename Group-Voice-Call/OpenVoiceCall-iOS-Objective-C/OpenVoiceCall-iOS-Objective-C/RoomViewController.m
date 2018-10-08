@@ -37,7 +37,7 @@
 - (void)loadAgoraKit {
     self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[AppID appID] delegate:self];
     [self.agoraKit setDefaultAudioRouteToSpeakerphone:YES];
-    [self.agoraKit joinChannelByToken:nil channelId:self.channelName info:nil uid:0 joinSuccess:nil];
+    [self.agoraKit joinChannelByKey:nil channelName:self.channelName info:nil uid:0 joinSuccess:nil];
 }
 
 #pragma mark- append info to tableView to display
@@ -55,7 +55,7 @@
 
 - (IBAction)clickHungUpButton:(UIButton *)sender {
     __weak typeof(RoomViewController) *weakself = self;
-    [self.agoraKit leaveChannel:^(AgoraChannelStats *stat) {
+    [self.agoraKit leaveChannel:^(AgoraRtcStats *stat) {
         [weakself dismissViewControllerAnimated:YES completion:nil];
     }];
 }
@@ -88,35 +88,35 @@
     [self appendInfoToTableViewWithInfo:@"ConnectionDidLost"];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOccurError:(AgoraErrorCode)errorCode {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOccurError:(AgoraRtcErrorCode)errorCode {
     [self appendInfoToTableViewWithInfo:[NSString stringWithFormat:@"Error Code:%ld", (long)errorCode]];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOfflineOfUid:(NSUInteger)uid reason:(AgoraUserOfflineReason)reason {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOfflineOfUid:(NSUInteger)uid reason:(AgoraRtcUserOfflineReason)reason {
     [self appendInfoToTableViewWithInfo:[NSString stringWithFormat:@"Uid:%lu didOffline reason:%lu", (unsigned long)uid, (unsigned long)reason]];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AgoraAudioOutputRouting)routing {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AgoraRtcAudioOutputRouting)routing {
     switch (routing) {
-        case AgoraAudioOutputRoutingDefault:
+        case AgoraRtc_AudioOutputRouting_Default:
             NSLog(@"AgoraRtc_AudioOutputRouting_Default");
             break;
-        case AgoraAudioOutputRoutingHeadset:
+        case AgoraRtc_AudioOutputRouting_Headset:
             NSLog(@"AgoraRtc_AudioOutputRouting_Headset");
             break;
-        case AgoraAudioOutputRoutingEarpiece:
+        case AgoraRtc_AudioOutputRouting_Earpiece:
             NSLog(@"AgoraRtc_AudioOutputRouting_Earpiece");
             break;
-        case AgoraAudioOutputRoutingHeadsetNoMic:
+        case AgoraRtc_AudioOutputRouting_HeadsetNoMic:
             NSLog(@"AgoraRtc_AudioOutputRouting_HeadsetNoMic");
             break;
-        case AgoraAudioOutputRoutingSpeakerphone:
+        case AgoraRtc_AudioOutputRouting_Speakerphone:
             NSLog(@"AgoraRtc_AudioOutputRouting_Speakerphone");
             break;
-        case AgoraAudioOutputRoutingLoudspeaker:
+        case AgoraRtc_AudioOutputRouting_Loudspeaker:
             NSLog(@"AgoraRtc_AudioOutputRouting_Loudspeaker");
             break;
-        case AgoraAudioOutputRoutingHeadsetBluetooth:
+        case AgoraRtc_AudioOutputRouting_HeadsetBluetooth:
             NSLog(@"AgoraRtc_AudioOutputRouting_HeadsetBluetooth");
             break;
         default:
