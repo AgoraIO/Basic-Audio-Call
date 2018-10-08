@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AgoraAudioKit
 
 class VoiceChatViewController: UIViewController {
 

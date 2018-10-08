@@ -41,6 +41,7 @@
 		07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		07DD2D521E9B47BF00E9FEED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		384C996D216B26BA00921076 /* Agora iOS Voice Tutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agora iOS Voice Tutorial-Bridging-Header.h"; sourceTree = "<group>"; };
 		4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +92,7 @@
 				07DD2D331E9B2FC600E9FEED /* Assets.xcassets */,
 				07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */,
 				07DD2D381E9B2FC600E9FEED /* Info.plist */,
+				384C996D216B26BA00921076 /* Agora iOS Voice Tutorial-Bridging-Header.h */,
 			);
 			path = "Agora iOS Voice Tutorial";
 			sourceTree = "<group>";
@@ -152,7 +154,7 @@
 					07DD2D281E9B2FC600E9FEED = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 48TB6ZZL5S;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -340,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a209dd7d-e48c-41f5-9303-d0ae3d58ac4f";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Agora iOS Voice Tutorial/Agora iOS Voice Tutorial-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -365,7 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a209dd7d-e48c-41f5-9303-d0ae3d58ac4f";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Agora iOS Voice Tutorial/Agora iOS Voice Tutorial-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
