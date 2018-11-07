@@ -10,11 +10,7 @@ With this sample app, you can:
 - Mute / unmute audio
 - Switch speaker
 
-A full-fledged demo can be found here: [OpenVoiceCall-Android](https://github.com/AgoraIO/OpenVoiceCall-Android)
-
-You can find demo for iOS here:
-
-- [Agora-iOS-Voice-Tutorial-Swift-1to1](https://github.com/AgoraIO/Agora-iOS-Voice-Tutorial-Swift-1to1)
+A full-fledged demo can be found here: [OpenVoiceCall-Android](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/Group-Voice-Call/OpenVoiceCall-Android)
 
 ## Running the App
 **First**, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "app/src/main/res/values/strings.xml" with your App ID.
@@ -54,7 +50,7 @@ Or use `Gradle` to build and run.
 
 ## Connect Us
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Android-Voice-Tutorial-1to1/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Basic-Audio-Call/issues)
 
 ## License
 The MIT License (MIT).
