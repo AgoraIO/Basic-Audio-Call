@@ -27,14 +27,14 @@ class RoomViewController: UIViewController {
     
     fileprivate var audioMuted = false {
         didSet {
-            muteAudioButton?.setImage(UIImage(named: audioMuted ? "btn_mute_blue" : "btn_mute"), for: UIControlState())
+            muteAudioButton?.setImage(UIImage(named: audioMuted ? "btn_mute_blue" : "btn_mute"), for: .normal)
             agoraKit.muteLocalAudioStream(audioMuted)
         }
     }
     
     fileprivate var speakerEnabled = true {
         didSet {
-            speakerButton?.setImage(UIImage(named: speakerEnabled ? "btn_speaker_blue" : "btn_speaker"), for: UIControlState())
+            speakerButton?.setImage(UIImage(named: speakerEnabled ? "btn_speaker_blue" : "btn_speaker"), for: .normal)
             speakerButton?.setImage(UIImage(named: speakerEnabled ? "btn_speaker" : "btn_speaker_blue"), for: .highlighted)
             
             agoraKit.setEnableSpeakerphone(speakerEnabled)
@@ -45,7 +45,7 @@ class RoomViewController: UIViewController {
         super.viewDidLoad()
         
         roomNameLabel.text = "\(roomName!)"
-        logTableView.rowHeight = UITableViewAutomaticDimension
+        logTableView.rowHeight = UITableView.automaticDimension
         logTableView.estimatedRowHeight = 25
         loadAgoraKit()
     }
