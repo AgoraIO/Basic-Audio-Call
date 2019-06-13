@@ -13,10 +13,18 @@ With this sample app, you can:
 A full-fledged demo can be found here: [OpenVoiceCall-Android](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/Group-Voice-Call/OpenVoiceCall-Android)
 
 ## Running the App
-**First**, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "app/src/main/res/values/strings.xml" with your App ID.
+**First**, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Note you can get a temp token from dashboard project page (Can be used to join given channel only). Update "app/src/main/res/values/strings.xml" with your App ID and Token.
 
 ```
+<!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+<!-- Get your own App ID at https://dashboard.agora.io/ -->
+<!-- After you entered the App ID, remove <##> outside of Your App ID -->
+<!-- For formal released project, please use Security Keys/Token
+    https://docs.agora.io/en/Video/token?platform=All%20Platforms -->
 <string name="agora_app_id"><#YOUR APP ID#></string>
+<!-- Please leave it if not enable App Certificate -->
+<!-- You can generate a temporary token at https://dashboard.agora.io/projects -->
+<string name="agora_access_token">#YOUR ACCESS TOKEN#</string>
 ```
 
 **Next**, integrate the Agora Voice SDK and there are two ways to integrate:
@@ -26,7 +34,7 @@ A full-fledged demo can be found here: [OpenVoiceCall-Android](https://github.co
 Add the address which can integrate the Agora Voice SDK automatically through JCenter in the property of the dependence of the "app/build.gradle":
 
 ```
-implementation 'io.agora.rtc:voice-sdk:2.4.0'
+implementation 'io.agora.rtc:voice-sdk:2.4.1'
 ```
 (Adding the link address is the most important step if you want to integrate the Agora Video SDK in your own application.)
 - Alternative way to integrate:

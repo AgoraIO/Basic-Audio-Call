@@ -13,10 +13,18 @@
 你可以在这里查看进阶版的示例项目：[OpenVoiceCall-Android](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/Group-Voice-Call/OpenVoiceCall-Android)
 
 ## 运行示例程序
-**首先**在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID 填写进 "app/src/main/res/values/strings.xml"
+**首先**在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。你可以在你的项目页面生成一个临时的Token (生成的Token只能用于加入指定的频道)，将 AppID 和 Token 填写进 "app/src/main/res/values/strings.xml"
 
 ```
+<!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+<!-- Get your own App ID at https://dashboard.agora.io/ -->
+<!-- After you entered the App ID, remove <##> outside of Your App ID -->
+<!-- For formal released project, please use Security Keys/Token
+    https://docs.agora.io/en/Video/token?platform=All%20Platforms -->
 <string name="agora_app_id"><#YOUR APP ID#></string>
+<!-- Please leave it if not enable App Certificate -->
+<!-- You can generate a temporary token at https://dashboard.agora.io/projects -->
+<string name="agora_access_token">#YOUR ACCESS TOKEN#</string>
 ```
 
 **然后**是集成 Agora 音频 SDK ，集成方式有以下两种：
@@ -26,7 +34,7 @@
 在项目对应的模块的 "app/build.gradle" 文件的依赖属性中加入通过 JCenter 自动集成 Agora 音频 SDK 的地址：
 
 ```
-implementation 'io.agora.rtc:voice-sdk:2.4.0'
+implementation 'io.agora.rtc:voice-sdk:2.4.1'
 ```
 
 ( 如果要在自己的应用中集成 Agora 音频 SDK，添加链接地址是最重要的一步。）

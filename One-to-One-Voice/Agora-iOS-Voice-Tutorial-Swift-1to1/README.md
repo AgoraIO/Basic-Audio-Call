@@ -13,10 +13,12 @@ With this sample app, you can:
 A full-fledged demo can be found here: [OpenVoiceCall-iOS](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/Group-Voice-Call/OpenVoiceCall-iOS)
 
 ## Running the App
-First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "AppID.swift" with your App ID.
+First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Note you can get a temp token from dashboard project page (Can be used to join given channel only). Update "AppID.swift" with your App ID and Token.
 
 ```
-let AppID: String = "Your App ID"
+let AppID: String = <#Your App Id#>
+// assign Token to nil if you have not enabled app certificate
+let Token: String? = <#Temp Token#>
 ```
 
 Next, download the **Agora Voice SDK** from [Agora.io SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy the "libs" folder to the project folder.

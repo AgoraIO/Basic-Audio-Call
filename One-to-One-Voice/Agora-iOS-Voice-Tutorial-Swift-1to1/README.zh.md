@@ -13,10 +13,12 @@
 你可以在这里查看进阶版的示例项目：[OpenVoiceCall-iOS](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/Group-Voice-Call/OpenVoiceCall-iOS)
 
 ## 运行示例程序
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID 填写进 AppID.swift
+首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。你可以在你的项目页面生成一个临时的Token (生成的Token只能用于加入指定的频道)。将 AppID 和 Token 填写进 AppID.swift
 
 ```
-let AppID: String = "Your App ID"
+let AppID: String = <#Your App ID#>
+// assign Token to nil if you have not enabled app certificate
+let Token: String? = <#Temp Token#>
 ```
 
 然后在 [Agora.io SDK](https://www.agora.io/cn/download/) 下载 **语音通话 + 直播 SDK**，解压后将其中的 **libs** 文件夹复制到本项目目录下，和 “Agora iOS Voice Tutorial” 文件夹平级。
