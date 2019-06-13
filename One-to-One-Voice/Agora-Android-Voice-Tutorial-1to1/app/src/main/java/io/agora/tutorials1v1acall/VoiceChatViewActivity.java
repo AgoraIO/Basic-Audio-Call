@@ -160,7 +160,11 @@ public class VoiceChatViewActivity extends AppCompatActivity {
 
     // Tutorial Step 2
     private void joinChannel() {
-        mRtcEngine.joinChannel(null, "voiceDemoChannel1", "Extra Optional Data", 0); // if you do not specify the uid, we will generate the uid for you
+        String token = getString(R.string.agora_access_token);
+        if(token.isEmpty()) {
+            token = null;
+        }
+        mRtcEngine.joinChannel(token, "voiceDemoChannel1", "Extra Optional Data", 0); // if you do not specify the uid, we will generate the uid for you
     }
 
     // Tutorial Step 3

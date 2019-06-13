@@ -27,7 +27,7 @@ class VoiceChatViewController: UIViewController {
     }
     
     func joinChannel() {
-        agoraKit.joinChannel(byToken: nil, channelId: "demoChannel", info:nil, uid:0) {[unowned self] (sid, uid, elapsed) -> Void in
+        agoraKit.joinChannel(byToken: Token, channelId: "demoChannel", info:nil, uid:0) {[unowned self] (sid, uid, elapsed) -> Void in
             // Joined channel "demoChannel"
             self.agoraKit.setEnableSpeakerphone(true)
             UIApplication.shared.isIdleTimerDisabled = true
