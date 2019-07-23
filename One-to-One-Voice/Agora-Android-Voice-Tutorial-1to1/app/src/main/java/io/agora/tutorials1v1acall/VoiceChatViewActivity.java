@@ -151,6 +151,7 @@ public class VoiceChatViewActivity extends AppCompatActivity {
     private void initializeAgoraEngine() {
         try {
             mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.agora_app_id), mRtcEventHandler);
+            mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_COMMUNICATION);
         } catch (Exception e) {
             Log.e(LOG_TAG, Log.getStackTraceString(e));
 
@@ -160,11 +161,12 @@ public class VoiceChatViewActivity extends AppCompatActivity {
 
     // Tutorial Step 2
     private void joinChannel() {
-        String token = getString(R.string.agora_access_token);
-        if(token.isEmpty()) {
-            token = null;
+        String accessToken = getString(R.string.agora_access_token);
+        if (TextUtils.equals(accessToken, "") || TextUtils.equals(accessToken, "#YOUR ACCESS TOKEN#")) {
+            accessToken = null; // default, no token
         }
-        mRtcEngine.joinChannel(token, "voiceDemoChannel1", "Extra Optional Data", 0); // if you do not specify the uid, we will generate the uid for you
+
+        mRtcEngine.joinChannel(accessToken, "voiceDemoChannel1", "Extra Optional Data", 0); // if you do not specify the uid, we will generate the uid for you
     }
 
     // Tutorial Step 3
