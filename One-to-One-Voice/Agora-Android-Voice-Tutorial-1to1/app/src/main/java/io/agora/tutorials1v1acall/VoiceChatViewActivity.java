@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
+import io.agora.rtc.Constants;
 import io.agora.rtc.IRtcEngineEventHandler;
 import io.agora.rtc.RtcEngine;
 
