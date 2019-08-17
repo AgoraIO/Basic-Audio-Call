@@ -24,7 +24,7 @@ public class VoiceChatViewActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQ_ID_RECORD_AUDIO = 22;
 
-    private RtcEngine mRtcEngine;// Tutorial Step 1
+    private RtcEngine mRtcEngine; // Tutorial Step 1
     private final IRtcEngineEventHandler mRtcEventHandler = new IRtcEngineEventHandler() { // Tutorial Step 1
 
         @Override
