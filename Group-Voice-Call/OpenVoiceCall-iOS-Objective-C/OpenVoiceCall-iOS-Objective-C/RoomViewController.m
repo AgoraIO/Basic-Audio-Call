@@ -7,7 +7,7 @@
 //
 
 #import "RoomViewController.h"
-#import <AgoraAudioKit/AgoraRtcEngineKit.h>
+#import <AgoraRtcKit/AgoraRtcEngineKit.h>
 #import "AppID.h"
 #import "InfoCell.h"
 #import "InfoModel.h"
