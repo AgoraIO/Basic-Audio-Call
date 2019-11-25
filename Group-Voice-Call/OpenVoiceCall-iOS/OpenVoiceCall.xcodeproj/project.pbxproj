@@ -16,11 +16,7 @@
 		073178091D800C190062A68C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073178061D800C190062A68C /* MainViewController.swift */; };
 		0731780A1D800C190062A68C /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073178071D800C190062A68C /* RoomViewController.swift */; };
 		0731780C1D800CF20062A68C /* MediaCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0731780B1D800CF20062A68C /* MediaCharacter.swift */; };
-		07D29C671E9E20BA00C3583C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D29C661E9E20BA00C3583C /* libresolv.tbd */; };
-		07D41FA11EF0DF0A004B29F9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D41FA01EF0DF0A004B29F9 /* CoreMedia.framework */; };
 		07F531E31E28C1A1009BFE58 /* OpenVoiceCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F531E21E28C1A1009BFE58 /* OpenVoiceCallUITests.swift */; };
-		0FA3A7691FB58500008526B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA3A7681FB584FA008526B2 /* SystemConfiguration.framework */; };
-		385F30872123CCBE005D5301 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F30862123CCBD005D5301 /* Accelerate.framework */; };
 		A76C270E238B8E1D0047E150 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C270C238B8E030047E150 /* AgoraRtcKit.framework */; };
 		A76C270F238B8E1D0047E150 /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76C270C238B8E030047E150 /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -76,11 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385F30872123CCBE005D5301 /* Accelerate.framework in Frameworks */,
 				A76C270E238B8E1D0047E150 /* AgoraRtcKit.framework in Frameworks */,
-				0FA3A7691FB58500008526B2 /* SystemConfiguration.framework in Frameworks */,
-				07D41FA11EF0DF0A004B29F9 /* CoreMedia.framework in Frameworks */,
-				07D29C671E9E20BA00C3583C /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
