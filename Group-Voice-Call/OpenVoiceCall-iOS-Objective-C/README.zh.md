@@ -1,14 +1,14 @@
-# Agora iOS Voice Tutorial for Swift - 1to1
+# Open Voice Call iOS for Objective C
 
 *Read this in other languages: [English](README.md)*
 
-这个开源示例项目演示了如何快速集成Agora音频SDK，实现1对1音频通话。
+这个开源示例项目演示了如何快速集成Agora音频SDK，实现多人音频通话。
 
 在这个示例项目中包含了以下功能：
 
 - 加入通话和离开通话；
 - 静音和解除静音；
-- 切换扬声器和听筒；
+- 外放和听筒切换；
 
 ## 环境准备
 
@@ -29,21 +29,26 @@
 3. 复制后台的 **App Id** 并备注，稍后启动应用时会用到它
 4. 在项目页面生成临时 **Access Token** (24小时内有效)并备注，注意生成的Token只能适用于对应的频道名。
 
-5. 将 AppID 和 Token 填写进 AppID.swift
+5. 将 AppID 和 Token 填写进 KeyCenter.swift
 
-    ```
-    let AppID: String = <#Your App Id#>
-    // 如果你没有打开Token功能，token可以直接给nil
-    let Token: String? = <#Temp Token#>
-    ```
+   ```
+   + (NSString *)AppId {
+    	return <#Your App Id#>;
+	}
+
+	// 如果你没有打开Token功能，token可以直接给nil
+	+ (NSString *)Token {
+    	return <#Temp Access Token#>;
+	}    
+   ```
 
 ### 集成 Agora 音频 SDK
 
-1. 在 [Agora.io SDK](https://www.agora.io/cn/blog/download/) 下载 **语音通话 + 直播 SDK**，解压后将其中**libs**文件夹中的下列文件拷贝到本项目的 Agora iOS Voice Tutorial 文件夹下。
+1. 在 [Agora.io SDK](https://www.agora.io/cn/blog/download/) 下载 **语音通话 + 直播 SDK**，解压后将其中**libs**文件夹中的下列文件拷贝到本项目的 OpenVoiceCall-iOS-Objective-C 文件夹下。
 
-  - AgoraRtcKit.framework
+  - AgoraRtcEngineKit.framework
 
-2. 最后使用 Xcode 打开 Agora iOS Voice Tutorial.xcodeproj，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
+2. 最后使用 Xcode 打开 OpenVoiceCall-iOS-Objective-C.xcodeproj，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
 
 ## 联系我们
 
