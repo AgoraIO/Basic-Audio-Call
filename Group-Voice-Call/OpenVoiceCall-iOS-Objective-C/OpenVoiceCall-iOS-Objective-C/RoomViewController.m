@@ -7,8 +7,8 @@
 //
 
 #import "RoomViewController.h"
-#import <AgoraAudioKit/AgoraRtcEngineKit.h>
-#import "AppID.h"
+#import <AgoraRtcKit/AgoraRtcEngineKit.h>
+#import "KeyCenter.h"
 #import "InfoCell.h"
 #import "InfoModel.h"
 
@@ -35,7 +35,7 @@
 
 #pragma mark- initAgoraKit
 - (void)loadAgoraKit {
-    self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[AppID appID] delegate:self];
+    self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[KeyCenter AppId] delegate:self];
     [self.agoraKit setDefaultAudioRouteToSpeakerphone:YES];
     [self.agoraKit joinChannelByToken:nil channelId:self.channelName info:nil uid:0 joinSuccess:nil];
 }

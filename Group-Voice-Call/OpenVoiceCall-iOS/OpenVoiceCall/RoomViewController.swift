@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AgoraRtcKit
 
 protocol RoomVCDelegate: class {
     func roomVCNeedClose(_ roomVC: RoomViewController)
