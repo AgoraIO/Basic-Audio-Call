@@ -16,13 +16,16 @@
 		073178091D800C190062A68C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073178061D800C190062A68C /* MainViewController.swift */; };
 		0731780A1D800C190062A68C /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073178071D800C190062A68C /* RoomViewController.swift */; };
 		0731780C1D800CF20062A68C /* MediaCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0731780B1D800CF20062A68C /* MediaCharacter.swift */; };
-		07D29C671E9E20BA00C3583C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D29C661E9E20BA00C3583C /* libresolv.tbd */; };
-		07D41FA11EF0DF0A004B29F9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D41FA01EF0DF0A004B29F9 /* CoreMedia.framework */; };
 		07F531E31E28C1A1009BFE58 /* OpenVoiceCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F531E21E28C1A1009BFE58 /* OpenVoiceCallUITests.swift */; };
-		0FA3A7691FB58500008526B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA3A7681FB584FA008526B2 /* SystemConfiguration.framework */; };
-		385F30872123CCBE005D5301 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F30862123CCBD005D5301 /* Accelerate.framework */; };
 		A76C270E238B8E1D0047E150 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C270C238B8E030047E150 /* AgoraRtcKit.framework */; };
-		A76C270F238B8E1D0047E150 /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76C270C238B8E030047E150 /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7733DB22407C14E00483870 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F30862123CCBD005D5301 /* Accelerate.framework */; };
+		A7733DB42407C15D00483870 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DB32407C15D00483870 /* AudioToolbox.framework */; };
+		A7733DB62407C16600483870 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DB52407C16600483870 /* AVFoundation.framework */; };
+		A7733DB82407C17300483870 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DB72407C16D00483870 /* libc++.tbd */; };
+		A7733DB92407C17900483870 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D29C661E9E20BA00C3583C /* libresolv.tbd */; };
+		A7733DBA2407C18400483870 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA3A7681FB584FA008526B2 /* SystemConfiguration.framework */; };
+		A7733DBB2407C18F00483870 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D41FA01EF0DF0A004B29F9 /* CoreMedia.framework */; };
+		A7733DBD2407C19800483870 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DBC2407C19800483870 /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,10 @@
 		0FA3A7681FB584FA008526B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		385F30862123CCBD005D5301 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A76C270C238B8E030047E150 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
+		A7733DB32407C15D00483870 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7733DB52407C16600483870 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7733DB72407C16D00483870 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A7733DBC2407C19800483870 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +83,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385F30872123CCBE005D5301 /* Accelerate.framework in Frameworks */,
+				A7733DBB2407C18F00483870 /* CoreMedia.framework in Frameworks */,
+				A7733DB62407C16600483870 /* AVFoundation.framework in Frameworks */,
+				A7733DBA2407C18400483870 /* SystemConfiguration.framework in Frameworks */,
+				A7733DB82407C17300483870 /* libc++.tbd in Frameworks */,
 				A76C270E238B8E1D0047E150 /* AgoraRtcKit.framework in Frameworks */,
-				0FA3A7691FB58500008526B2 /* SystemConfiguration.framework in Frameworks */,
-				07D41FA11EF0DF0A004B29F9 /* CoreMedia.framework in Frameworks */,
-				07D29C671E9E20BA00C3583C /* libresolv.tbd in Frameworks */,
+				A7733DB22407C14E00483870 /* Accelerate.framework in Frameworks */,
+				A7733DB42407C15D00483870 /* AudioToolbox.framework in Frameworks */,
+				A7733DBD2407C19800483870 /* CoreTelephony.framework in Frameworks */,
+				A7733DB92407C17900483870 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,10 @@
 		07D29C651E9E20BA00C3583C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7733DBC2407C19800483870 /* CoreTelephony.framework */,
+				A7733DB72407C16D00483870 /* libc++.tbd */,
+				A7733DB52407C16600483870 /* AVFoundation.framework */,
+				A7733DB32407C15D00483870 /* AudioToolbox.framework */,
 				385F30862123CCBD005D5301 /* Accelerate.framework */,
 				0FA3A7681FB584FA008526B2 /* SystemConfiguration.framework */,
 				07D41FA01EF0DF0A004B29F9 /* CoreMedia.framework */,
