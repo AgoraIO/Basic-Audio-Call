@@ -25,7 +25,7 @@ A tutorial demo can be found here: [Agora-Android-Voice-Tutorial-1to1](https://g
 
 Add the address which can integrate the Agora Voice SDK automatically through JCenter in the property of the dependence of the "app/build.gradle":
 ```
-implementation 'io.agora.rtc:voice-sdk:2.4.0'
+implementation 'io.agora.rtc:voice-sdk:3.0.0'
 ```
 (This sample program has added this address and do not need to add again. Adding the link address is the most important step if you want to integrate the Agora Voice SDK in your own application.)
 
