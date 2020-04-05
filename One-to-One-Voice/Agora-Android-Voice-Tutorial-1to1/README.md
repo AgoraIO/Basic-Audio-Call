@@ -34,7 +34,7 @@ A full-fledged demo can be found here: [OpenVoiceCall-Android](https://github.co
 Add the address which can integrate the Agora Voice SDK automatically through JCenter in the property of the dependence of the "app/build.gradle":
 
 ```
-implementation 'io.agora.rtc:voice-sdk:2.4.1'
+implementation 'io.agora.rtc:voice-sdk:3.0.0'
 ```
 (Adding the link address is the most important step if you want to integrate the Agora Video SDK in your own application.)
 - Alternative way to integrate:
