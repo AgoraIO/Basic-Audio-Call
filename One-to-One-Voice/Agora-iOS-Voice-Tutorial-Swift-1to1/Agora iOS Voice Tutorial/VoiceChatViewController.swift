@@ -23,10 +23,12 @@ class VoiceChatViewController: UIViewController {
     }
     
     func initializeAgoraEngine() {
+        // Initializes the Agora engine with your app ID.
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: AppID, delegate: nil)
     }
     
     func joinChannel() {
+        // Allows a user to join a channel.
         agoraKit.joinChannel(byToken: Token, channelId: "demoChannel", info:nil, uid:0) {[unowned self] (sid, uid, elapsed) -> Void in
             // Joined channel "demoChannel"
             self.agoraKit.setEnableSpeakerphone(true)
@@ -51,11 +53,15 @@ class VoiceChatViewController: UIViewController {
     
     @IBAction func didClickMuteButton(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        // Stops/Resumes sending the local audio stream.
         agoraKit.muteLocalAudioStream(sender.isSelected)
     }
     
     @IBAction func didClickSwitchSpeakerButton(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        // Enables/Disables the audio playback route to the speakerphone.
+        //
+        // This method sets whether the audio is routed to the speakerphone or earpiece. After calling this method, the SDK returns the onAudioRouteChanged callback to indicate the changes.
         agoraKit.setEnableSpeakerphone(sender.isSelected)
     }
 }
