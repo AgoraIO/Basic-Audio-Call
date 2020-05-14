@@ -13,15 +13,8 @@
 		07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D331E9B2FC600E9FEED /* Assets.xcassets */; };
 		07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */; };
 		07DD2D401E9B300200E9FEED /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D3F1E9B300200E9FEED /* AppID.swift */; };
-		A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; };
-		A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DC92407C3B200483870 /* Accelerate.framework */; };
-		A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */; };
-		A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */; };
-		A7733DCD2407C3CD00483870 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077537B91ED5416D00EF0878 /* CoreMedia.framework */; };
-		A773BC912407C42D003ECBFD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */; };
-		A773BC922407C435003ECBFD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D521E9B47BF00E9FEED /* libc++.tbd */; };
-		A773BC932407C43D003ECBFD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */; };
-		A773BC942407C445003ECBFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */; };
+		A7958D4F246D58D600319E10 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; };
+		A7958D50246D58D600319E10 /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A7958D50246D58D600319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,15 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */,
-				A773BC942407C445003ECBFD /* SystemConfiguration.framework in Frameworks */,
-				A773BC922407C435003ECBFD /* libc++.tbd in Frameworks */,
-				A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */,
-				A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */,
-				A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */,
-				A773BC912407C42D003ECBFD /* CoreTelephony.framework in Frameworks */,
-				A7733DCD2407C3CD00483870 /* CoreMedia.framework in Frameworks */,
-				A773BC932407C43D003ECBFD /* libresolv.tbd in Frameworks */,
+				A7958D4F246D58D600319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
