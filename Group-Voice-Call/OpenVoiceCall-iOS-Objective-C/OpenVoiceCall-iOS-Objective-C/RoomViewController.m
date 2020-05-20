@@ -64,7 +64,7 @@
 
 - (IBAction)clickHungUpButton:(UIButton *)sender {
     __weak typeof(RoomViewController) *weakself = self;
-    // Hang out meaning leaving the channel.  You may assign some action after
+    // Hang up meaning leaving the channel.  You may assign some action after
     // leaving the channel
     [self.agoraKit leaveChannel:^(AgoraChannelStats *stat) {
         [weakself dismissViewControllerAnimated:YES completion:nil];
