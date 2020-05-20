@@ -45,7 +45,7 @@
     
     // Step 3: join the channel.  In this demo, we do not use a token, thus it is nil
     // If the App certificate is set up, pass the token to the first parameter
-    [self.agoraKit joinChannelByToken:nil channelId:self.channelName info:nil uid:0 joinSuccess:nil];
+    [self.agoraKit joinChannelByToken:[KeyCenter Token] channelId:self.channelName info:nil uid:0 joinSuccess:nil];
 }
 
 #pragma mark- append info to tableView to display
