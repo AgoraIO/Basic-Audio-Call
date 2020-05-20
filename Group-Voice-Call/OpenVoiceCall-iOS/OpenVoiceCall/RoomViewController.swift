@@ -116,7 +116,7 @@ extension RoomViewController: UITableViewDataSource {
     }
 }
 
-//MARK: - engine
+//MARK: - agora engine
 private extension RoomViewController {
     func loadAgoraKit() {
         ///  Initialize the RTC Engine in two basic steps:
@@ -136,7 +136,7 @@ private extension RoomViewController {
     }
     
     func leaveChannel() {
-        // leaving the channel
+        // leaving the Agora channel
         agoraKit.leaveChannel(nil)
         delegate?.roomVCNeedClose(self)
     }
@@ -238,10 +238,25 @@ extension RoomViewController: AgoraRtcEngineDelegate {
         append(log: "Did offline of uid: \(uid), reason: \(reason.rawValue)")
     }
     
+    /** Reports the audio quality of the remote user.
+    *
+    *  @param engine  - AgoraRtcEngineKit object.
+    *  @param uid     - User ID of the speaker.
+    *  @param quality - Audio quality of the user, see [AgoraNetworkQuality](https://docs.agora.io/en/Voice/API%20Reference/oc/Constants/AgoraNetworkQuality.html).
+    *  @param delay - Time delay (ms) of the audio packet sent from the sender to the receiver, including the time delay from audio sampling pre-processing, transmission, and the jitter buffer.
+    *  @param lost - Packet loss rate (%) of the audio packet sent from the sender to the receiver.
+    * - */
     func rtcEngine(_ engine: AgoraRtcEngineKit, audioQualityOfUid uid: UInt, quality: AgoraNetworkQuality, delay: UInt, lost: UInt) {
         append(log: "Audio Quality of uid: \(uid), quality: \(quality.rawValue), delay: \(delay), lost: \(lost)")
     }
-    
+  
+    /** Occurs when a method is executed by the SDK.
+    *
+    *  @param engine  - AgoraRtcEngineKit object.
+    *  @param api - The method executed by the SDK.
+    *  @param error - The error code ([AgoraErrorCode](https://docs.agora.io/en/Voice/API%20Reference/oc/Constants/AgoraErrorCode.html)) returned by the SDK when the method call fails. If the SDK returns 0, then the method call succeeds.
+    *  @param result - The result of the method call.
+    * - */
     func rtcEngine(_ engine: AgoraRtcEngineKit, didApiCallExecute api: String, error: Int) {
         append(log: "Did api call execute: \(api), error: \(error)")
     }
