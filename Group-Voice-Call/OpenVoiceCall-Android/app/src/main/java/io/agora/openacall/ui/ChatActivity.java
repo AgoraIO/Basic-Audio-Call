@@ -57,6 +57,24 @@ public class ChatActivity extends BaseActivity implements AGEventHandler {
 
         String channelName = i.getStringExtra(ConstantApp.ACTION_KEY_CHANNEL_NAME);
 
+        /*
+          Allows a user to join a channel.
+
+          Users in the same channel can talk to each other, and multiple users in the same channel can start a group chat. Users with different App IDs cannot call each other.
+
+          You must call the leaveChannel method to exit the current call before joining another channel.
+
+          A successful joinChannel method call triggers the following callbacks:
+
+          The local client: onJoinChannelSuccess.
+          The remote client: onUserJoined, if the user joining the channel is in the Communication profile, or is a BROADCASTER in the Live Broadcast profile.
+
+          When the connection between the client and Agora's server is interrupted due to poor
+          network conditions, the SDK tries reconnecting to the server. When the local client
+          successfully rejoins the channel, the SDK triggers the onRejoinChannelSuccess callback
+          on the local client.
+
+         */
         worker().joinChannel(channelName, config().mUid);
 
         TextView textChannelName = (TextView) findViewById(R.id.channel_name);
@@ -141,6 +159,13 @@ public class ChatActivity extends BaseActivity implements AGEventHandler {
         log.info("onSwitchSpeakerClicked " + view + " " + mAudioMuted + " " + mAudioRouting);
 
         RtcEngine rtcEngine = rtcEngine();
+
+        /*
+          Enables/Disables the audio playback route to the speakerphone.
+          This method sets whether the audio is routed to the speakerphone or earpiece.
+          After calling this method, the SDK returns the onAudioRouteChanged callback
+          to indicate the changes.
+         */
         rtcEngine.setEnableSpeakerphone(mAudioRouting != 3);
     }
 
@@ -152,6 +177,22 @@ public class ChatActivity extends BaseActivity implements AGEventHandler {
         event().removeEventHandler(this);
     }
 
+    /**
+     * Allows a user to leave a channel.
+     *
+     * After joining a channel, the user must call the leaveChannel method to end the call before
+     * joining another channel. This method returns 0 if the user leaves the channel and releases
+     * all resources related to the call. This method call is asynchronous, and the user has not
+     * exited the channel when the method call returns. Once the user leaves the channel,
+     * the SDK triggers the onLeaveChannel callback.
+     *
+     * A successful leaveChannel method call triggers the following callbacks:
+     *
+     * The local client: onLeaveChannel.
+     * The remote client: onUserOffline, if the user leaving the channel is in the
+     * Communication channel, or is a BROADCASTER in the Live Broadcast profile.
+     *
+     */
     private void doLeaveChannel() {
         worker().leaveChannel(config().mChannel);
     }
