@@ -13,15 +13,8 @@
 		07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D331E9B2FC600E9FEED /* Assets.xcassets */; };
 		07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */; };
 		07DD2D401E9B300200E9FEED /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D3F1E9B300200E9FEED /* AppID.swift */; };
-		A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; };
-		A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DC92407C3B200483870 /* Accelerate.framework */; };
-		A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */; };
-		A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */; };
-		A7733DCD2407C3CD00483870 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077537B91ED5416D00EF0878 /* CoreMedia.framework */; };
-		A773BC912407C42D003ECBFD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D501E9B47B000E9FEED /* CoreTelephony.framework */; };
-		A773BC922407C435003ECBFD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D521E9B47BF00E9FEED /* libc++.tbd */; };
-		A773BC932407C43D003ECBFD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */; };
-		A773BC942407C445003ECBFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */; };
+		A7958D4F246D58D600319E10 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; };
+		A7958D50246D58D600319E10 /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A76C2704238B8AA80047E150 /* AgoraRtcKit.framework in Embed Frameworks */,
+				A7958D50246D58D600319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		077537B91ED5416D00EF0878 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora iOS Voice Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DD2D291E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora-iOS-Voice-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatViewController.swift; sourceTree = "<group>"; };
 		07DD2D311E9B2FC600E9FEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,15 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */,
-				A773BC942407C445003ECBFD /* SystemConfiguration.framework in Frameworks */,
-				A773BC922407C435003ECBFD /* libc++.tbd in Frameworks */,
-				A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */,
-				A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */,
-				A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */,
-				A773BC912407C42D003ECBFD /* CoreTelephony.framework in Frameworks */,
-				A7733DCD2407C3CD00483870 /* CoreMedia.framework in Frameworks */,
-				A773BC932407C43D003ECBFD /* libresolv.tbd in Frameworks */,
+				A7958D4F246D58D600319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +68,7 @@
 		07DD2D201E9B2FC600E9FEED = {
 			isa = PBXGroup;
 			children = (
-				07DD2D2B1E9B2FC600E9FEED /* Agora iOS Voice Tutorial */,
+				07DD2D2B1E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */,
 				07DD2D2A1E9B2FC600E9FEED /* Products */,
 				07DD2D491E9B479800E9FEED /* Frameworks */,
 			);
@@ -92,12 +77,12 @@
 		07DD2D2A1E9B2FC600E9FEED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */,
+				07DD2D291E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07DD2D2B1E9B2FC600E9FEED /* Agora iOS Voice Tutorial */ = {
+		07DD2D2B1E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */ = {
 			isa = PBXGroup;
 			children = (
 				07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */,
@@ -107,7 +92,7 @@
 				A76C2708238B8AFE0047E150 /* Supporting Files */,
 				A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */,
 			);
-			path = "Agora iOS Voice Tutorial";
+			path = "Agora-iOS-Voice-Tutorial";
 			sourceTree = "<group>";
 		};
 		07DD2D491E9B479800E9FEED /* Frameworks */ = {
@@ -140,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07DD2D281E9B2FC600E9FEED /* Agora iOS Voice Tutorial */ = {
+		07DD2D281E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora iOS Voice Tutorial" */;
+			buildConfigurationList = 07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora-iOS-Voice-Tutorial" */;
 			buildPhases = (
 				07DD2D251E9B2FC600E9FEED /* Sources */,
 				07DD2D261E9B2FC600E9FEED /* Frameworks */,
@@ -153,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = "Agora iOS Voice Tutorial";
+			name = "Agora-iOS-Voice-Tutorial";
 			productName = "Agora iOS Voice Tutorial";
-			productReference = 07DD2D291E9B2FC600E9FEED /* Agora iOS Voice Tutorial.app */;
+			productReference = 07DD2D291E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora iOS Voice Tutorial" */;
+			buildConfigurationList = 07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora-iOS-Voice-Tutorial" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07DD2D281E9B2FC600E9FEED /* Agora iOS Voice Tutorial */,
+				07DD2D281E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */,
 			);
 		};
 /* End PBXProject section */
@@ -368,12 +353,12 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
 					"$(PROJECT_DIR)/libs",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
 				);
-				INFOPLIST_FILE = "Agora iOS Voice Tutorial/Info.plist";
+				INFOPLIST_FILE = "Agora-iOS-Voice-Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-iOS-Voice-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,12 +380,12 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
 					"$(PROJECT_DIR)/libs",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
-					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
+					"$(PROJECT_DIR)/Agora-iOS-Voice-Tutorial",
 				);
-				INFOPLIST_FILE = "Agora iOS Voice Tutorial/Info.plist";
+				INFOPLIST_FILE = "Agora-iOS-Voice-Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-iOS-Voice-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora iOS Voice Tutorial" */ = {
+		07DD2D241E9B2FC600E9FEED /* Build configuration list for PBXProject "Agora-iOS-Voice-Tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DD2D391E9B2FC600E9FEED /* Debug */,
@@ -423,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora iOS Voice Tutorial" */ = {
+		07DD2D3B1E9B2FC600E9FEED /* Build configuration list for PBXNativeTarget "Agora-iOS-Voice-Tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DD2D3C1E9B2FC600E9FEED /* Debug */,
