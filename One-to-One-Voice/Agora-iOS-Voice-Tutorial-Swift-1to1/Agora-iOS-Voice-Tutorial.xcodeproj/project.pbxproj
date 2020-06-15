@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07DD2D2D1E9B2FC600E9FEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */; };
-		07DD2D2F1E9B2FC600E9FEED /* VoiceChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */; };
-		07DD2D321E9B2FC600E9FEED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D301E9B2FC600E9FEED /* Main.storyboard */; };
-		07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D331E9B2FC600E9FEED /* Assets.xcassets */; };
-		07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */; };
-		07DD2D401E9B300200E9FEED /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D3F1E9B300200E9FEED /* AppID.swift */; };
-		A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */; };
+		A76767A624971E05002C4FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A767679C24971E05002C4FBD /* Assets.xcassets */; };
+		A76767A724971E05002C4FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A767679D24971E05002C4FBD /* LaunchScreen.storyboard */; };
+		A76767A824971E05002C4FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A767679F24971E05002C4FBD /* Main.storyboard */; };
+		A76767A924971E05002C4FBD /* VoiceChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76767A124971E05002C4FBD /* VoiceChatViewController.swift */; };
+		A76767AA24971E05002C4FBD /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76767A224971E05002C4FBD /* AppID.swift */; };
+		A76767AB24971E05002C4FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76767A324971E05002C4FBD /* AppDelegate.swift */; };
+		A76767AC24971E05002C4FBD /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76767A424971E05002C4FBD /* AgoraRtcKit.framework */; };
 		A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733DC92407C3B200483870 /* Accelerate.framework */; };
 		A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */; };
 		A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */; };
@@ -27,13 +27,6 @@
 /* Begin PBXFileReference section */
 		077537B91ED5416D00EF0878 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		07DD2D291E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora-iOS-Voice-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatViewController.swift; sourceTree = "<group>"; };
-		07DD2D311E9B2FC600E9FEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07DD2D331E9B2FC600E9FEED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07DD2D361E9B2FC600E9FEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07DD2D381E9B2FC600E9FEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07DD2D3F1E9B300200E9FEED /* AppID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppID.swift; sourceTree = "<group>"; };
 		07DD2D4A1E9B479800E9FEED /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		07DD2D4C1E9B479D00E9FEED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		07DD2D4E1E9B47A400E9FEED /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
@@ -41,8 +34,15 @@
 		07DD2D521E9B47BF00E9FEED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
+		A767679C24971E05002C4FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A767679E24971E05002C4FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A76767A024971E05002C4FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76767A124971E05002C4FBD /* VoiceChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceChatViewController.swift; sourceTree = "<group>"; };
+		A76767A224971E05002C4FBD /* AppID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppID.swift; sourceTree = "<group>"; };
+		A76767A324971E05002C4FBD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76767A424971E05002C4FBD /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
+		A76767A524971E05002C4FBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76C2702238B8AA80047E150 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcKit.framework; path = "Agora iOS Voice Tutorial/AgoraRtcKit.framework"; sourceTree = "<group>"; };
-		A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
 		A7733DC92407C3B200483870 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,10 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76767AC24971E05002C4FBD /* AgoraRtcKit.framework in Frameworks */,
 				A7733DCC2407C3C300483870 /* AVFoundation.framework in Frameworks */,
 				A773BC942407C445003ECBFD /* SystemConfiguration.framework in Frameworks */,
 				A773BC922407C435003ECBFD /* libc++.tbd in Frameworks */,
-				A76C2707238B8ABD0047E150 /* AgoraRtcKit.framework in Frameworks */,
 				A7733DCA2407C3B200483870 /* Accelerate.framework in Frameworks */,
 				A7733DCB2407C3BC00483870 /* AudioToolbox.framework in Frameworks */,
 				A773BC912407C42D003ECBFD /* CoreTelephony.framework in Frameworks */,
@@ -69,7 +69,7 @@
 		07DD2D201E9B2FC600E9FEED = {
 			isa = PBXGroup;
 			children = (
-				07DD2D2B1E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */,
+				A767679B24971E05002C4FBD /* Agora iOS Voice Tutorial */,
 				07DD2D2A1E9B2FC600E9FEED /* Products */,
 				07DD2D491E9B479800E9FEED /* Frameworks */,
 			);
@@ -81,19 +81,6 @@
 				07DD2D291E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		07DD2D2B1E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */,
-				07DD2D3F1E9B300200E9FEED /* AppID.swift */,
-				07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */,
-				07DD2D301E9B2FC600E9FEED /* Main.storyboard */,
-				A76C2708238B8AFE0047E150 /* Supporting Files */,
-				A76C2706238B8ABD0047E150 /* AgoraRtcKit.framework */,
-			);
-			path = "Agora-iOS-Voice-Tutorial";
 			sourceTree = "<group>";
 		};
 		07DD2D491E9B479800E9FEED /* Frameworks */ = {
@@ -113,14 +100,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A76C2708238B8AFE0047E150 /* Supporting Files */ = {
+		A767679B24971E05002C4FBD /* Agora iOS Voice Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				07DD2D331E9B2FC600E9FEED /* Assets.xcassets */,
-				07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */,
-				07DD2D381E9B2FC600E9FEED /* Info.plist */,
+				A767679C24971E05002C4FBD /* Assets.xcassets */,
+				A767679D24971E05002C4FBD /* LaunchScreen.storyboard */,
+				A767679F24971E05002C4FBD /* Main.storyboard */,
+				A76767A124971E05002C4FBD /* VoiceChatViewController.swift */,
+				A76767A224971E05002C4FBD /* AppID.swift */,
+				A76767A324971E05002C4FBD /* AppDelegate.swift */,
+				A76767A424971E05002C4FBD /* AgoraRtcKit.framework */,
+				A76767A524971E05002C4FBD /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Agora iOS Voice Tutorial";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */,
-				07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */,
-				07DD2D321E9B2FC600E9FEED /* Main.storyboard in Resources */,
+				A76767A824971E05002C4FBD /* Main.storyboard in Resources */,
+				A76767A624971E05002C4FBD /* Assets.xcassets in Resources */,
+				A76767A724971E05002C4FBD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,29 +194,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DD2D401E9B300200E9FEED /* AppID.swift in Sources */,
-				07DD2D2F1E9B2FC600E9FEED /* VoiceChatViewController.swift in Sources */,
-				07DD2D2D1E9B2FC600E9FEED /* AppDelegate.swift in Sources */,
+				A76767AB24971E05002C4FBD /* AppDelegate.swift in Sources */,
+				A76767AA24971E05002C4FBD /* AppID.swift in Sources */,
+				A76767A924971E05002C4FBD /* VoiceChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07DD2D301E9B2FC600E9FEED /* Main.storyboard */ = {
+		A767679D24971E05002C4FBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07DD2D311E9B2FC600E9FEED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07DD2D361E9B2FC600E9FEED /* Base */,
+				A767679E24971E05002C4FBD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A767679F24971E05002C4FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76767A024971E05002C4FBD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -357,6 +349,7 @@
 					"$(PROJECT_DIR)/libs",
 					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
+					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 				);
 				INFOPLIST_FILE = "Agora iOS Voice Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -382,6 +375,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 					"$(PROJECT_DIR)/Agora\\ iOS\\ Voice\\ Tutorial",
 				);
