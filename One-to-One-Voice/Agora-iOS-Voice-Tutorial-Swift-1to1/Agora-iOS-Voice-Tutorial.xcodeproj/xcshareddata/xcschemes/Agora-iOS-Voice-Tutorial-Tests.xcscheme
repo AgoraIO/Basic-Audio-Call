@@ -34,6 +34,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07DD2D281E9B2FC600E9FEED"
+            BuildableName = "Agora-iOS-Voice-Tutorial.app"
+            BlueprintName = "Agora-iOS-Voice-Tutorial"
+            ReferencedContainer = "container:Agora-iOS-Voice-Tutorial.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -41,6 +51,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07DD2D281E9B2FC600E9FEED"
+            BuildableName = "Agora-iOS-Voice-Tutorial.app"
+            BlueprintName = "Agora-iOS-Voice-Tutorial"
+            ReferencedContainer = "container:Agora-iOS-Voice-Tutorial.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
