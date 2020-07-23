@@ -49,10 +49,15 @@ To build and run the sample application, get an App Id:
   
 2. Connect your iPhone or iPad device and run the project. Ensure a valid provisioning profile is applied or your project will not run.
 
-## Connect Us
+## Contact Us
 
-- You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Basic-Audio-Call/issues)
+- For potential issues, take a look at our [FAQ](https://docs.agora.io/en/faq) first
+- Dive into [Agora SDK Samples](https://github.com/AgoraIO) to see more tutorials
+- Take a look at [Agora Use Case](https://github.com/AgoraIO-usecase) for more complicated real use case
+- Repositories managed by developer communities can be found at [Agora Community](https://github.com/AgoraIO-Community)
+- You can find full API documentation at [Document Center](https://docs.agora.io/en/)
+- If you encounter problems during integration, you can ask question in [Stack Overflow](https://stackoverflow.com/questions/tagged/agora.io)
+- You can file bugs about this sample at [issue](https://github.com/AgoraIO/Basic-Audio-Call/issues)
 
 ## License
 
