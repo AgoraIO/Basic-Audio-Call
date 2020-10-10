@@ -183,11 +183,7 @@ public class VoiceChatViewActivity extends AppCompatActivity {
     // Tutorial Step 1
     private void initializeAgoraEngine() {
         try {
-            mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.agora_app_id), mRtcEventHandler);
-            // Sets the channel profile of the Agora RtcEngine.
-            // CHANNEL_PROFILE_COMMUNICATION(0): (Default) The Communication profile. Use this profile in one-on-one calls or group calls, where all users can talk freely.
-            // CHANNEL_PROFILE_LIVE_BROADCASTING(1): The Live-Broadcast profile. Users in a live-broadcast channel have a role as either broadcaster or audience. A broadcaster can both send and receive streams; an audience can only receive streams.
-            mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_COMMUNICATION);
+            mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.agora_app_id), mRtcEventHandler);            
         } catch (Exception e) {
             Log.e(LOG_TAG, Log.getStackTraceString(e));
 
@@ -201,6 +197,11 @@ public class VoiceChatViewActivity extends AppCompatActivity {
         if (TextUtils.equals(accessToken, "") || TextUtils.equals(accessToken, "#YOUR ACCESS TOKEN#")) {
             accessToken = null; // default, no token
         }
+        
+        // Sets the channel profile of the Agora RtcEngine.
+        // CHANNEL_PROFILE_COMMUNICATION(0): (Default) The Communication profile. Use this profile in one-on-one calls or group calls, where all users can talk freely.
+        // CHANNEL_PROFILE_LIVE_BROADCASTING(1): The Live-Broadcast profile. Users in a live-broadcast channel have a role as either broadcaster or audience. A broadcaster can both send and receive streams; an audience can only receive streams.
+        mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_COMMUNICATION);
 
         // Allows a user to join a channel.
         mRtcEngine.joinChannel(accessToken, "voiceDemoChannel1", "Extra Optional Data", 0); // if you do not specify the uid, we will generate the uid for you
