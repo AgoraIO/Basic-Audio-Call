@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C0F662546DC8C00D80A57 /* Agorafdkaac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F622546DC8700D80A57 /* Agorafdkaac.framework */; };
+		032C0F672546DC8C00D80A57 /* Agorafdkaac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F622546DC8700D80A57 /* Agorafdkaac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		032C0F682546DC8D00D80A57 /* AgoraSoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F632546DC8700D80A57 /* AgoraSoundTouch.framework */; };
+		032C0F692546DC8D00D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F632546DC8700D80A57 /* AgoraSoundTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		071792761D801C950056FF98 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071792751D801C950056FF98 /* LogCell.swift */; };
 		073177C31D7FFDF90062A68C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073177C21D7FFDF90062A68C /* AppDelegate.swift */; };
 		073177C81D7FFDF90062A68C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073177C61D7FFDF90062A68C /* Main.storyboard */; };
@@ -39,6 +43,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A7958D54246D591A00319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
+				032C0F692546DC8D00D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */,
+				032C0F672546DC8C00D80A57 /* Agorafdkaac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		032C0F622546DC8700D80A57 /* Agorafdkaac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agorafdkaac.framework; sourceTree = "<group>"; };
+		032C0F632546DC8700D80A57 /* AgoraSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraSoundTouch.framework; sourceTree = "<group>"; };
 		071792751D801C950056FF98 /* LogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
 		073177BF1D7FFDF80062A68C /* OpenVoiceCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenVoiceCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073177C21D7FFDF90062A68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032C0F662546DC8C00D80A57 /* Agorafdkaac.framework in Frameworks */,
+				032C0F682546DC8D00D80A57 /* AgoraSoundTouch.framework in Frameworks */,
 				A7958D53246D591A00319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +122,8 @@
 		073177C11D7FFDF80062A68C /* OpenVoiceCall */ = {
 			isa = PBXGroup;
 			children = (
+				032C0F622546DC8700D80A57 /* Agorafdkaac.framework */,
+				032C0F632546DC8700D80A57 /* AgoraSoundTouch.framework */,
 				073178061D800C190062A68C /* MainViewController.swift */,
 				073178071D800C190062A68C /* RoomViewController.swift */,
 				073178051D800C190062A68C /* KeyCenter.swift */,
@@ -210,7 +222,7 @@
 				TargetAttributes = {
 					073177BE1D7FFDF80062A68C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 48TB6ZZL5S;
+						DevelopmentTeam = GM72UGLGZW;
 						LastSwiftMigration = 0940;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -431,8 +443,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development: Qianze Zhang (3C9KJFP729)";
+				DEVELOPMENT_TEAM = GM72UGLGZW;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.agora.OpenVoiceCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "79882373-94b6-4ada-8717-099b70cbf706";
-				PROVISIONING_PROFILE_SPECIFIER = AgoraAppsDevProfile;
+				PROVISIONING_PROFILE_SPECIFIER = App;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -457,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
+				CODE_SIGN_IDENTITY = "Apple Development: Qianze Zhang (3C9KJFP729)";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
