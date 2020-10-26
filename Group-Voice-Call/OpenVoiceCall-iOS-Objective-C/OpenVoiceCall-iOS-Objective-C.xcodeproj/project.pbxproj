@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C0F6E2546DD1800D80A57 /* Agorafdkaac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F6A2546DD1500D80A57 /* Agorafdkaac.framework */; };
+		032C0F6F2546DD1800D80A57 /* Agorafdkaac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F6A2546DD1500D80A57 /* Agorafdkaac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		032C0F702546DD1900D80A57 /* AgoraSoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F6B2546DD1500D80A57 /* AgoraSoundTouch.framework */; };
+		032C0F712546DD1900D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F6B2546DD1500D80A57 /* AgoraSoundTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A71D86F51F6F93E4004B8FA7 /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D86F41F6F93E4004B8FA7 /* InfoCell.m */; };
 		A71D86F81F6F993C004B8FA7 /* InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D86F71F6F993C004B8FA7 /* InfoModel.m */; };
 		A767A0D02074EF050070BAFF /* ChatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A767A0CE2074EF050070BAFF /* ChatButton.m */; };
@@ -31,6 +35,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A7958D52246D590C00319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
+				032C0F712546DD1900D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */,
+				032C0F6F2546DD1800D80A57 /* Agorafdkaac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		032C0F6A2546DD1500D80A57 /* Agorafdkaac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agorafdkaac.framework; sourceTree = "<group>"; };
+		032C0F6B2546DD1500D80A57 /* AgoraSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraSoundTouch.framework; sourceTree = "<group>"; };
 		385F305D2122D295005D5301 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		70F970C3209039CD0075E402 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A71D86F31F6F93E4004B8FA7 /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
@@ -80,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032C0F6E2546DD1800D80A57 /* Agorafdkaac.framework in Frameworks */,
+				032C0F702546DD1900D80A57 /* AgoraSoundTouch.framework in Frameworks */,
 				A7958D51246D590C00319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +128,8 @@
 		A79E0DDE1F6D462C00FE5711 /* OpenVoiceCall-iOS-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				032C0F6A2546DD1500D80A57 /* Agorafdkaac.framework */,
+				032C0F6B2546DD1500D80A57 /* AgoraSoundTouch.framework */,
 				A7237F5C2126AA9E00F2F397 /* Controllers */,
 				A79E0E241F6D480100FE5711 /* Views */,
 				A79E0E251F6D486B00FE5711 /* Models */,
@@ -405,8 +417,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
+				CODE_SIGN_IDENTITY = "Apple Development: Qianze Zhang (3C9KJFP729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Qianze Zhang (3C9KJFP729)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -431,8 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuhua Gong (YBKA3W5TF4)";
+				CODE_SIGN_IDENTITY = "Apple Development: Qianze Zhang (3C9KJFP729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Qianze Zhang (3C9KJFP729)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
