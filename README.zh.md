@@ -1,4 +1,5 @@
 # 音频通话
+# **本项目会在接下去归档并停止维护. 最新的示例代码请参考 https://github.com/AgoraIO/API-Examples**
 
 _其他语言：[English](README.md)_
 
