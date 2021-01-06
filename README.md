@@ -1,5 +1,4 @@
 # Basic Audio Call
-# **This Project has been deprecated and archived. We will stop maintain it. Please look at https://github.com/AgoraIO/API-Examples for latest Agora Samples.**
 
 _Other Languages: [简体中文](README.zh.md)_
 
