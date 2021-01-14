@@ -13,6 +13,13 @@
 		07DD2D341E9B2FC600E9FEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D331E9B2FC600E9FEED /* Assets.xcassets */; };
 		07DD2D371E9B2FC600E9FEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD2D351E9B2FC600E9FEED /* LaunchScreen.storyboard */; };
 		07DD2D401E9B300200E9FEED /* AppID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD2D3F1E9B300200E9FEED /* AppID.swift */; };
+		8B74EE1325AFEAC600DE7960 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE0F25AFEAC600DE7960 /* AgoraRtcKit.framework */; };
+		8B74EE1725AFEAC900DE7960 /* AgoraCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1025AFEAC600DE7960 /* AgoraCore.framework */; };
+		8B74EE1825AFEAC900DE7960 /* AgoraCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1025AFEAC600DE7960 /* AgoraCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B74EE1925AFEACB00DE7960 /* Agorafdkaac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1125AFEAC600DE7960 /* Agorafdkaac.framework */; };
+		8B74EE1A25AFEACB00DE7960 /* Agorafdkaac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1125AFEAC600DE7960 /* Agorafdkaac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B74EE1B25AFEACC00DE7960 /* AgoraSoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1225AFEAC600DE7960 /* AgoraSoundTouch.framework */; };
+		8B74EE1C25AFEACC00DE7960 /* AgoraSoundTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B74EE1225AFEAC600DE7960 /* AgoraSoundTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7AD0EE124AEF6D9008FFD5B /* Agora_iOS_Voice_Tutorial_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD0EE024AEF6D9008FFD5B /* Agora_iOS_Voice_Tutorial_Tests.swift */; };
 		A7AD0EE924AEF828008FFD5B /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AD0EE824AEF828008FFD5B /* AgoraRtcKit.framework */; };
 		A7AD0EEA24AEF828008FFD5B /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7AD0EE824AEF828008FFD5B /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -35,7 +42,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8B74EE1A25AFEACB00DE7960 /* Agorafdkaac.framework in Embed Frameworks */,
+				8B74EE1825AFEAC900DE7960 /* AgoraCore.framework in Embed Frameworks */,
 				A7AD0EEA24AEF828008FFD5B /* AgoraRtcKit.framework in Embed Frameworks */,
+				8B74EE1C25AFEACC00DE7960 /* AgoraSoundTouch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +69,10 @@
 		07DD2D521E9B47BF00E9FEED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0F2747CE1FB45B26005D3DBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4CAD8A3995D18C23C51B2C92 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
+		8B74EE0F25AFEAC600DE7960 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
+		8B74EE1025AFEAC600DE7960 /* AgoraCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraCore.framework; sourceTree = "<group>"; };
+		8B74EE1125AFEAC600DE7960 /* Agorafdkaac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agorafdkaac.framework; sourceTree = "<group>"; };
+		8B74EE1225AFEAC600DE7960 /* AgoraSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraSoundTouch.framework; sourceTree = "<group>"; };
 		A76C2702238B8AA80047E150 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcKit.framework; path = "Agora iOS Voice Tutorial/AgoraRtcKit.framework"; sourceTree = "<group>"; };
 		A7733DC92407C3B200483870 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A7AD0EDE24AEF6D9008FFD5B /* Agora-iOS-Voice-Tutorial-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Agora-iOS-Voice-Tutorial-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B74EE1325AFEAC600DE7960 /* AgoraRtcKit.framework in Frameworks */,
+				8B74EE1B25AFEACC00DE7960 /* AgoraSoundTouch.framework in Frameworks */,
 				A7AD0EE924AEF828008FFD5B /* AgoraRtcKit.framework in Frameworks */,
+				8B74EE1725AFEAC900DE7960 /* AgoraCore.framework in Frameworks */,
+				8B74EE1925AFEACB00DE7960 /* Agorafdkaac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +126,10 @@
 		07DD2D2B1E9B2FC600E9FEED /* Agora-iOS-Voice-Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				8B74EE1025AFEAC600DE7960 /* AgoraCore.framework */,
+				8B74EE1125AFEAC600DE7960 /* Agorafdkaac.framework */,
+				8B74EE0F25AFEAC600DE7960 /* AgoraRtcKit.framework */,
+				8B74EE1225AFEAC600DE7960 /* AgoraSoundTouch.framework */,
 				07DD2D2E1E9B2FC600E9FEED /* VoiceChatViewController.swift */,
 				07DD2D3F1E9B300200E9FEED /* AppID.swift */,
 				07DD2D2C1E9B2FC600E9FEED /* AppDelegate.swift */,
